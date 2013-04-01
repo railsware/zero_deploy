@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'zero_deploy'
+if ARGV.size > 0
+  command = ARGV.join(" ")
+  ZeroDeploy.deploy(command)
+else
+  puts "Please specify your deploy command"
+  exit 1
+end
+
