@@ -19,7 +19,7 @@ module ZeroDeploy
 
     def assets_precompile
       action "Running: rake assets:precompile"
-      action "Asset precompilation completed (#{rand(0.01).round(2)}s)"
+      action "Asset precompilation completed (0.0000001s)"
     end
 
     def run_migrations
