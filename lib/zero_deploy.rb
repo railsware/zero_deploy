@@ -1,4 +1,3 @@
-require "benchmark"
 require_relative "zero_deploy/processor"
 
 module ZeroDeploy
@@ -9,13 +8,11 @@ module ZeroDeploy
     puts "Zero deploy started... Fasten your seatbelt!"
     puts ""
 
-    time = Benchmark.realtime do
-      processor.checkout_code
-      processor.bundle_install
-      processor.assets_precompile
-      processor.run_migrations
-      processor.finalize
-    end
+    processor.checkout_code
+    processor.bundle_install
+    processor.assets_precompile
+    processor.run_migrations
+    processor.finalize
 
     puts ""
     puts "Deploy completed in #{processor.time_spent.round(3)}s."
