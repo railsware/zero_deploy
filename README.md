@@ -1,4 +1,5 @@
 # Zero Deploy
+[![Build Status](https://travis-ci.org/railsware/zero_deploy.png)](https://travis-ci.org/railsware/zero_deploy)
 
 Significantly improves typical deployment speed.
 
