@@ -1,3 +1,5 @@
+require 'open3'
+
 module ZeroDeploy
   class Processor
     attr_reader :time_spent

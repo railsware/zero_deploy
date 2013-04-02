@@ -17,6 +17,10 @@ module ZeroDeploy
     puts ""
     puts "Deploy completed in #{processor.time_spent.round(3)}s."
     puts "Which is quite close to Zero!"
+
+    puts ""
+    puts "Interested in the magic behind this gem?"
+    puts "Check this out: http://bit.ly/XaCkIF"
   end
 
 end
